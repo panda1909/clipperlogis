@@ -1,0 +1,512 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+
+<section id="mainSlider">
+    <div id="owl-main" class="owl-carousel">
+        <div class="item">
+            <img src="{% static 'images/img/slider1.jpg' %}" alt="logo_img" class="img-fluid">
+            <div class="container">
+                <div class="carousel-caption vertical-top text-left">
+                    <h4 class="animate" data-anim-type="fadeInDown" data-anim-delay="600">One stop solution for</h4>
+                    <h1 class="animate" data-anim-type="fadeInDown" data-anim-delay="600">World’s Best<br><span>Transportation</span>
+                    </h1>
+                    <p class="animate" data-anim-type="fadeInUp" data-anim-delay="600">The clean code allows you to
+                        easily copy code blocks from content modules and past
+                        them in different places or layouts.</p>
+                    <div class="fadeInRight-3">
+                        <a href="{% url 'contact' %}" class="btn btn-large animate" data-anim-type="fadeInUp" data-anim-delay="600">Contact Us
+                            <i class="fas fa-angle-double-right icon"></i></a>
+
+                    </div>
+                </div><!-- /.caption -->
+            </div><!-- /.container -->
+        </div><!-- /.item -->
+      <div class="item">
+            <img src="{% static 'images/img/slider2.jpg' %}" alt="logo_img" class="img-fluid">
+            <div class="container">
+                <div class="carousel-caption vertical-top text-center">
+                    <h4 class="animate" data-anim-type="fadeInDown" data-anim-delay="500">One stop solution for</h4>
+                    <h1 class="animate" data-anim-type="fadeInDown" data-anim-delay="500">Safe & Reliable <br><span>Logistic Solutions!</span>
+                    </h1>
+                    <p class="animate" data-anim-type="fadeInUp" data-anim-delay="500">The clean code allows you to
+                        easily copy code blocks from content modules and past
+                        them in different places or layouts.</p>
+                    <div class="fadeInRight-3">
+                        <a href="{% url 'contact' %}" class="btn btn-large animate" data-anim-type="fadeInUp" data-anim-delay="600">Contact Us
+                            <i class="fas fa-angle-double-right icon"></i></a>
+
+                    </div>
+                </div><!-- /.caption -->
+            </div><!-- /.container -->
+        </div><!-- /.item -->
+
+        <div class="item">
+            <img src="{% static 'images/img/slider3.jpg' %}" alt="logo_img" class="img-fluid">
+            <div class="container">
+                <div class="carousel-caption vertical-top text-right">
+                    <h4 class="animate" data-anim-type="fadeInDown" data-anim-delay="600">One stop solution for</h4>
+                    <h1 class="animate" data-anim-type="fadeInDown" data-anim-delay="600">Logistics &<br><span>Transportation Company</span>
+                    </h1>
+                    <p class="animate" data-anim-type="fadeInUp" data-anim-delay="600">The clean code allows you to
+                        easily copy code blocks from content modules and past
+                        them in different places or layouts.</p>
+                    <div class="fadeInRight-3">
+                        <a href="{% url 'contact' %}" class="btn btn-large animate" data-anim-type="fadeInUp" data-anim-delay="600">Contact
+                            Us <i class="fas fa-angle-double-right icon"></i></a>
+                    </div>
+                </div><!-- /.caption -->
+            </div><!-- /.container -->
+        </div><!-- /.item -->
+    </div><!-- /.owl-carousel -->
+</section>
+<!-- features-area-start -->
+<section class="blog-area gray-bg1 pt-100 pb-75">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
+                <div class="single-blog wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="blog-image">
+                        <img src="{% static 'images/img/f1.jpg' %}" alt="">
+                    </div>
+                    <div class="blog-details text-center">
+                        <div class="blog-meta"><a href="#"><i class="fas fa-ship"></i></a></div>
+                        <h3><a href="#">Sea Freight In City</a></h3>
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout..</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
+                <div class="single-blog wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="blog-image">
+                        <img src="{% static 'images/img/f2.jpg' %}" alt="">
+                    </div>
+                    <div class="blog-details text-center">
+                        <div class="blog-meta"><a href="#"><i class="fas fa-plane"></i></a></div>
+                        <h3><a href="#">Air Freight In City</a></h3>
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout..</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
+                <div class="single-blog wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="blog-image">
+                        <img src="{% static 'images/img/f3.jpg' %}" alt="">
+                    </div>
+                    <div class="blog-details text-center">
+                        <div class="blog-meta"><a href="#"><i class="fas fa-shipping-fast"></i></a></div>
+                        <h3><a href="#">Road Freight In City</a></h3>
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout..</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- features-area-end -->
+ <!--SERVICE AREA-->
+    <section class="service-area pt-75 pb-75">
+        <div class="service-top-area">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-md-5 col-lg-5 col-sm-12 col-xs-12">
+                        <div class="service-content wow fadeIn">
+                            <h2>WE HAVE 25 YEARS EXPERIENCE IN THIS PASSION</h2>
+                            <p>I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-7 col-lg-7 col-sm-12 col-xs-12">
+                        <div class="service-catalouge-content-area wow fadeIn">
+                            <div class="service-catalouge-bg"></div>
+                            <div class="catalouge-content">
+                                        <h3>Carries Transportation </h3>
+                                        <p>I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you.</p>
+                                        <ul>
+                                            <li><i class="far fa-check-square"></i> Lorem ipsum dolor sit amet, consectetur.</li>
+                                            <li><i class="far fa-check-square"></i> Sed quia consequuntur magni dolores eos.</li>
+                                            <li><i class="far fa-check-square"></i> Nemo enim ipsam voluptatem .</li>
+                                            <li><i class="far fa-check-square"></i> We denounce with righteous indignation.</li>
+                                        </ul>
+                                    </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!--SERVICE AREA END-->
+        <!--Support AREA-->
+        <section class="support-area pt-60 pb-60">
+            <div class="support-area wow fadeIn">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5 col-lg-4 col-sm-6 col-xs-12">
+                            <div class="single-support">
+                                <div class="support-icon"><i class="fas fa-anchor"></i></div>
+                                <div class="promo-details">
+                                    <h3>Our Location</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </div>
+                            </div>
+                            <div class="single-support">
+                                <div class="support-icon"><i class="far fa-newspaper"></i></div>
+                                <div class="promo-details">
+                                    <h3>Latest News</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5 col-lg-4 col-sm-6 col-xs-12">
+                            <div class="single-support">
+                                <div class="support-icon"><i class="fas fa-umbrella"></i></div>
+                                <div class="promo-details">
+                                    <h3>24/7 Support</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </div>
+                            </div>
+                            <div class="single-support">
+                                <div class="support-icon"><i class="fas fa-truck"></i></div>
+                                <div class="promo-details">
+                                    <h3>Fast Delevery</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!--Support AREA END-->
+        <!--Start How it Work-->
+        <div class="site-section bg-image overlay pt-75 pb-75" style="background-image: url('static/images/img/work.png');">
+            <div class="container">
+              <div class="row justify-content-center mb-5">
+                <div class="col-md-7 text-center border-primary">
+                    <div class="title-section1 center pb-60 animate" data-anim-type="fadeInLeft" data-anim-delay="900">
+                        <h2><span>HOW IT WORKS</span></h2>
+                    </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
+                  <div class="how-it-work-item">
+                    <span class="number">1</span>
+                    <div class="how-it-work-body">
+                      <h2>Make An Order</h2>
+                      <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt praesentium dicta consectetur fuga neque fugit a at. Cum quod vero assumenda iusto.</p>
+                      <ul class="ul-check list-unstyled success">
+                        <li class="text-white"><i class="far fa-hand-point-right"></i>&nbsp;&nbsp;&nbsp;Error minus sint nobis dolor</li>
+                        <li class="text-white"><i class="far fa-hand-point-right"></i>&nbsp;&nbsp;&nbsp;Voluptatum porro expedita labore esse</li>
+                        <li class="text-white"><i class="far fa-hand-point-right"></i>&nbsp;&nbsp;&nbsp;Voluptas unde sit pariatur earum</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="200">
+                  <div class="how-it-work-item">
+                    <span class="number">2</span>
+                    <div class="how-it-work-body">
+                      <h2>Make A Payment</h2>
+                      <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt praesentium dicta consectetur fuga neque fugit a at. Cum quod vero assumenda iusto.</p>
+                      <ul class="ul-check list-unstyled success">
+                        <li class="text-white"><i class="far fa-hand-point-right"></i>&nbsp;&nbsp;&nbsp;Error minus sint nobis dolor</li>
+                        <li class="text-white"><i class="far fa-hand-point-right"></i>&nbsp;&nbsp;&nbsp;Voluptatum porro expedita labore esse</li>
+                        <li class="text-white"><i class="far fa-hand-point-right"></i>&nbsp;&nbsp;&nbsp;Voluptas unde sit pariatur earum</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="300">
+                  <div class="how-it-work-item">
+                    <span class="number">3</span>
+                    <div class="how-it-work-body">
+                      <h2>Track Your Order</h2>
+                      <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt praesentium dicta consectetur fuga neque fugit a at. Cum quod vero assumenda iusto.</p>
+                      <ul class="ul-check list-unstyled success">
+                        <li class="text-white"><i class="far fa-hand-point-right"></i>&nbsp;&nbsp;&nbsp;Error minus sint nobis dolor</li>
+                        <li class="text-white"><i class="far fa-hand-point-right"></i>&nbsp;&nbsp;&nbsp;Voluptatum porro expedita labore esse</li>
+                        <li class="text-white"><i class="far fa-hand-point-right"></i>&nbsp;&nbsp;&nbsp;Voluptas unde sit pariatur earum</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <!--How it Work End-->
+ <!-- about-us-area-start -->
+ <div class="about-us-area pt-75 pb-75">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-6 col-lg-6">
+                <div class="about-us-img mb-30">
+                    <img src="{% static 'images/img/about.jpg' %}" alt="">
+                </div>
+            </div>
+            <div class="col-xl-6 col-lg-6">
+                <div class="about-us-wrapper mb-30">
+                    <div class="section-title pos-rel mb-35">
+                        <span class="border-left-1"></span>
+                    <span>Logistics & Transportation</span>
+                    <span class="border-right-1"></span>
+
+                        <h2>Modern & Trusted Logistics Company</h2>
+                    </div>
+                    <div class="about-us-text pos-rel">
+                        <span>Because those who do not know how to pursue pleasu rationally encounter consequences that are extremelye painful. Nor again is there anyone who loves</span>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolorem que laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptate voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- about-us-area-end -->
+
+
+<!-- services-area-start -->
+<div class="services-area grey-bg pt-75 pb-75">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-8 col-lg-8 offset-lg-2 offset-xl-2">
+                <div class="section-title section-2 text-center pos-rel mb-30">
+                    <div class="title-section center pb-60">
+                        <h2><span>What We Offer To Highest Quality Services</span></h2>
+                        <p class="title-desc"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec sagittis nisi.
+                            Duis rhoncus
+                            imperdiet tortor eu sodales </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-4 col-lg-4 col-md-6">
+                <div class="services-02-wrapper mb-30">
+                    <div class="services-02-icon">
+                        <img src="{% static 'images/img/1.png' %}" alt="">
+                    </div>
+                    <div class="services-02-text">
+                        <h3>Road Freight</h3>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantiu doloremque laudantium totam remap eriam eaque ipsa quae abillo</p>
+                        <div class="b-button1 black-b-button1">
+                         </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6">
+                <div class="services-02-wrapper mb-30">
+                    <div class="services-02-icon">
+                        <img src="{% static 'images/img/4.png' %}" alt="">
+                    </div>
+                    <div class="services-02-text">
+                        <h3>Sea Freight</h3>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantiu doloremque laudantium totam remap eriam eaque ipsa quae abillo</p>
+                        <div class="b-button1 black-b-button1">
+                         </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6">
+                <div class="services-02-wrapper mb-30">
+                    <div class="services-02-icon">
+                        <img src="{% static 'images/img/2.png' %}" alt="">
+                    </div>
+                    <div class="services-02-text">
+                        <h3>Cargo Transport</h3>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantiu doloremque laudantium totam remap eriam eaque ipsa quae abillo</p>
+                        <div class="b-button1 black-b-button1">
+                         </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6">
+                <div class="services-02-wrapper mb-30">
+                    <div class="services-02-icon">
+                        <img src="{% static 'images/img/5.png' %}" alt="">
+                    </div>
+                    <div class="services-02-text">
+                        <h3>Packaging</h3>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantiu doloremque laudantium totam remap eriam eaque ipsa quae abillo</p>
+                        <div class="b-button1 black-b-button1">
+                         </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6">
+                <div class="services-02-wrapper mb-30">
+                    <div class="services-02-icon">
+                        <img src="{% static 'images/img/1.png' %}" alt="">
+                    </div>
+                    <div class="services-02-text">
+                        <h3>Home Delivery</h3>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantiu doloremque laudantium totam remap eriam eaque ipsa quae abillo</p>
+                        <div class="b-button1 black-b-button1">
+                         </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6">
+                <div class="services-02-wrapper mb-30">
+                    <div class="services-02-icon">
+                        <img src="{% static 'images/img/6.png' %}" alt="">
+                    </div>
+                    <div class="services-02-text">
+                        <h3>Supply Chain</h3>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantiu doloremque laudantium totam remap eriam eaque ipsa quae abillo</p>
+                        <div class="b-button1 black-b-button1">
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End services-area-start -->
+<!--service-gallery-->
+<div class="service-gallery pt-60 pb-60">
+    <div class="container">
+        <div class="title-section center pb-60">
+            <h2><span>WE HAVE BEST GALLERY</span></h2>
+            <p class="title-desc"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec sagittis nisi.
+                Duis rhoncus
+                imperdiet tortor eu sodales </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xl col-md-12">
+        <div class="gallery">
+            <div class="box">
+              <img src="{% static 'images/img/gallery1.jpg' %}">
+              <span>Air Transports</span>
+            </div>
+            <div class="box">
+              <img src="{% static 'images/img/gallery2.jpg' %}">
+              <span>Cargo Transports</span>
+            </div>
+            <div class="box">
+              <img src="{% static 'images/img/gallery3.jpg' %}">
+              <span>Cargo Ship</span>
+            </div>
+            <div class="box">
+              <img src="{% static 'images/img/gallery4.jpg' %}">
+              <span>Ware Housing</span>
+            </div>
+        </div>
+       </div>
+    </div>
+</div>
+<!--service-gallery-->
+
+<!--choose section-->
+<section class="row choose-section space pt-100 pb-60" id="choose">
+    <div class="container">
+        <div class="title-section center pb-60">
+            <h2><span>WHY CHOOSE US</span></h2>
+            <p class="title-desc"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec sagittis nisi.
+                Duis rhoncus
+                imperdiet tortor eu sodales </p>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-md-4 choose-desc">
+                <ul>
+                    <li class="pb-30"><h4> GOODS TRACKING SYSTEM </h4>
+                        
+                    </li>
+                    <li class="pb-30"><h4> WORLDWIDE LOCATION </h4>
+                        
+                    </li>
+                    <li class="pb-30"><h4> HUGE STORAGE</h4>
+                        
+                    </li>
+                    <li><h4>DELIVERY IN TIME </h4>
+                        
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-md-12 choose-desc second-div">
+
+            </div>
+            <div class="col-lg-4 col-md-6 choose-desc">
+                <ul>
+                    <li class="pb-30"><h4> GOODS TRACKING SYSTEM </h4>
+                        
+                    </li>
+                    <li class="pb-30"><h4> WORLDWIDE LOCATION </h4>
+                        
+                    </li>
+                    <li class="pb-30"><h4> HUGE STORAGE</h4>
+                        
+                    </li>
+                    <li><h4>DELIVERY IN TIME </h4>
+                        
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<!--choose section-->
+
+
+ <!-- cta-area-start -->
+ <div class="cta-area pt-120 pb-130" style="background-image:url(static/images/img/bg6.jpg)">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-8 col-lg-8 offset-lg-2 offset-xl-2">
+                <div class="cta-wrapper text-center">
+                    <div class="cta-text">
+                        <span>24/7 Active Suport Team</span>
+                        <h1>Need Immediate Support Or Any Help?</h1>
+                        <a class="btn-1" href="#">meet with us <i class="far fa-paper-plane"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- cta-area-end -->
+
+    <!--Start Signup Area -->
+ <section class="singnup_area section_padding pt-75 pb-75">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-lg-4">
+                <div class="signup_img">
+                    <img src="{% static 'images/img/form.png' %}" alt="">
+                </div>
+            </div>
+            <div class="col-md-8 col-lg-8">
+                <div class="signup_form">
+                    <h2>REQUEST A FREE QUOTE</h2>
+                    <form method="post">
+                        {% csrf_token %}
+                        <div class="row">
+                            <div class="col-md-6 col-lg-6">
+                                <input type="text" name="name" id="name" placeholder="Your Name" required>
+                                <input type="tel" name="phone" id="phone" placeholder="Your Number" required>
+                                <input type="text" name="take" id="take" placeholder="Form zip" required>
+                                <input type="text" name="desc" id="desc" placeholder="Description" required>
+                            </div>
+                            <div class="col-md-6 col-lg-6">
+                                <input type="email" name="email" id="email" placeholder="Email Address" required>
+                                <input type="text" name="type" id="type" placeholder="Type Of Move" required>
+                                <input type="text" name="deliver" id="deliver" placeholder="To zip" required>
+                            </div>
+                            <p class="text-left"><button type="submit">SUBMIT</button></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
