@@ -37,7 +37,7 @@
     <header class="bg-color">
         <div class="container top-bar">
             <ul class="top-content">
-                <li><i class="fas fa-envelope icon"></i>RoadLinersTransport@example.com</li>
+{#                <li><i class="fas fa-envelope icon"></i>RoadLinersTransport@example.com</li>#}
                 <li><i class="fas fa-map-marker-alt icon"></i>60 PAYA LEBAR ROAD #08 - 55, PAYA LEBAR SQUARE, SINGAPORE</li>
             </ul>
         </div>
@@ -51,17 +51,19 @@
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <div class="crbnMenu">
                 <ul class="menu">
-                    <li class="nav-item"><a class="nav-link" href="about.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'home' %}">Home</a></li>
+                    {% block nav-mobile %}
                     <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
                     <li class="nav-item"><a class="nav-link" href="about.html">Services</a></li>
 
                     <li class="nav-item"><a class="nav-link" href="{% url 'contact' %}">Contact Us</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">Request a Free Quote</a></li>
+                    {% endblock %}
                 </ul>
             </div>
         </div>
         <span class="side-btn" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-        <a class="navbar-brand pb-2" href="index.html"> <img src="{% static 'images/all-img/logo.png' %}" alt="logo_img"> </a>
+        <a class="navbar-brand pb-2" href="{% url 'home' %}"> <img src="{% static 'images/all-img/logo.png' %}" alt="logo_img"> </a>
     </div>
 </div>
 <!-- mobile-sidemenu -->
@@ -70,16 +72,18 @@
     <div class="container">
         <nav class="navbar navbar-expand-sm offcanvas-desktop">
             <div class="col-md-3 ">
-                <a class="navbar-brand pb-2" href="index-3.html"> <img src="{% static 'images/all-img/logo.png' %}" alt="logo_img"> </a>
+                <a class="navbar-brand pb-2" href="{% url 'home' %}"> <img src="{% static 'images/all-img/logo.png' %}" alt="logo_img"> </a>
             </div>
             <div class="col-md-9 collapse navbar-collapse">
                 <ul class="navbar-nav">
-                   <li class="nav-item"><a class="nav-link" href="about.html">Home</a></li>
+                   <li class="nav-item"><a class="nav-link" href="{% url 'home' %}">Home</a></li>
+                    {% block nav-desktop %}
                     <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
                     <li class="nav-item"><a class="nav-link" href="about.html">Services</a></li>
 
                     <li class="nav-item"><a class="nav-link" href="{% url 'contact' %}">Contact Us</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">Request a Free Quote</a></li>
+                    {% endblock %}
                 </ul>
             </div>
         </nav>
@@ -99,107 +103,46 @@
              data-anim-delay="400">
             <div class="row">
                 <div class="widgets-col">
-                    <a class="navbar-brand pb-2" href="index.html"> <img src="{% static 'images/all-img/logo.png' %}" alt="logo_img"
+                    <a class="navbar-brand pb-2"> <img src="{% static 'images/all-img/logo.png' %}" alt="logo_img"
                                                                          class="img-fluid"> </a>
                     <p> Clipper Logistics PTE. LTD, consectetur adipiscing elit, sed do eiusmod tempor illo inventore
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor illo
                         inventore </p>
 
-                    <p>
-                        <i class="fas fa-map"></i> <span>60 PAYA LEBAR ROAD #08 - 55, PAYA LEBAR SQUARE, SINGAPORE</span>
-                    </p>
-                    <p>
-                        <i class="fas fa-phone-square"></i> <span>Free Call: 111 428 5581</span>
-                    </p>
-                    <p>
-                        <i class="far fa-envelope"></i> <span> Drop us a message: info@ciazz.com </span>
-                    </p>
+
+{#                    <p>#}
+{#                        <i class="fas fa-phone-square"></i> <span>Free Call: 111 428 5581</span>#}
+{#                    </p>#}
+{#                    <p>#}
+{#                        <i class="far fa-envelope"></i> <span> Drop us a message: info@ciazz.com </span>#}
+{#                    </p>#}
                 </div>
 
-                <div class="widgets-col">
-                    <h3> Links </h3>
-                    <ul class="widget_links">
-                        <li>
-                            <a href="#"> Home </a>
-                        </li>
-                        <li>
-                            <a href="#"> About Us </a>
-                        </li>
-                        <li>
-                            <a href="#"> Blogs </a>
-                        </li>
-                        <li>
-                            <a href="#"> Services </a>
-                        </li>
-                        <li>
-                            <a href="#">News </a>
-                        </li>
-                        <li>
-                            <a href="#">Contact </a>
-                        </li>
-                    </ul>
-                </div>
 
-                <div class="widgets-col">
+
+                <div style="margin-left: 20%" class="widgets-col">
                     <h3> Services </h3>
                     <ul class="widget_links">
                         <li>
-                            <a href="#"> Home </a>
+                            <a href="{% url 'home' %}"> Home </a>
                         </li>
                         <li>
                             <a href="#"> About Us </a>
                         </li>
                         <li>
-                            <a href="#"> Blogs </a>
-                        </li>
-                        <li>
                             <a href="#"> Services </a>
                         </li>
                         <li>
-                            <a href="#">News </a>
-                        </li>
-                        <li>
-                            <a href="#">Contact </a>
+                            <a href="{% url 'contact' %}">Contact </a>
                         </li>
                     </ul>
                 </div>
+
                 <div class="widgets-col">
-                    <h3> Company </h3>
-                    <ul class="widget_links">
-                        <li>
-                            <a href="#"> Home </a>
-                        </li>
-                        <li>
-                            <a href="#"> About Us </a>
-                        </li>
-                        <li>
-                            <a href="#"> Blogs </a>
-                        </li>
-                        <li>
-                            <a href="#"> Services </a>
-                        </li>
-                        <li>
-                            <a href="#">News </a>
-                        </li>
-                        <li>
-                            <a href="#">Contact </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="widgets-col">
-                    <h3> Download </h3>
-                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor illo inventore
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor illo
-                        inventore </p>
-                    <h4>GET TRACKINF APP ON</h4>
-                    <ul class="widget_app">
-                        <li>
-                            <a href="#"> <img src="{% static 'images/all-img/footer-img1.png' %}" alt="app-img"> </a>
-                        </li>
-                        <li>
-                            <a href="#"> <img src="{% static 'images/all-img/footer-img2.png' %}" alt="app-img"> </a>
-                        </li>
-                    </ul>
+                    <h3> Contact </h3>
+                    <p>
+                        <i class="fas fa-map"></i> <span>60 PAYA LEBAR ROAD #08 - 55, PAYA LEBAR SQUARE, SINGAPORE</span>
+                    </p>
                 </div>
             </div>
         </div>
@@ -209,22 +152,17 @@
 <div class="row coppy-right">
     <div class="container">
         <div class="col-md-4">
-            <p> RoadLiners Transport | PSD Template:</p>
+            <p> Clipper Logistics PTE. LTD</p>
         </div>
         <div class="col-md-4">
             <ul class="social-icons">
-                <li><a href="#"><i class="fab fa-facebook-f icon"></i></a></li>
-                <li><a href="#"><i class="fab fa-linkedin-in icon"></i></a></li>
-                <li><a href="#"><i class="fab fa-twitter icon"></i></a></li>
-                <li><a href="#"><i class="fab fa-pinterest icon"></i></a></li>
-                <li><a href="#"><i class="fab fa-google-plus icon"></i></a></li>
+                <li style="color: white">A member of KHEMKA group</li>
+
             </ul>
         </div>
         <div class="col-md-4">
             <ul class="footer-menu">
-                <li><a href="#">terms & conditions |</a></li>
-                <li><a href="#">Privacy Policy |</a></li>
-                <li><a href="#">Site Map </a></li>
+                <li><a href="#">All rights are reserved</a></li>
             </ul>
         </div>
         <!--./coppy-right-->
@@ -234,6 +172,7 @@
 <!-- Return to Top -->
 <a href="javascript:" id="return-to-top"><i class="fas fa-arrow-alt-circle-up h4"></i></a>
 <!-- Return to Top -->
+{% block loader %}
  <!--page-loader-->
         <div id="page-anim-preloader">
             <div class="page_preloader-inner  content-center">
@@ -259,6 +198,7 @@
             </div>
         </div>
 <!--JS bootstrap-->
+{% endblock %}
 <script src="{% static 'js/jquery-v3.3.1.min.js' %}"></script>
 <script src="{% static 'js/bootstrap-v4.1.3.min.js' %}"></script>
 <script src="{% static 'js/animations.min.js' %}"></script>

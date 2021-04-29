@@ -16,6 +16,21 @@
     <link rel="stylesheet" href="{% static 'css/reponsive.css' %}">
 {% endblock %}
 
+{% block nav-mobile %}
+    <li class="nav-item"><a class="nav-link" href="{% url 'home' %}#about ">About Us</a></li>
+    <li class="nav-item"><a class="nav-link" href="{% url 'home' %}#services ">Services</a></li>
+
+    <li class="nav-item"><a class="nav-link" href="{% url 'contact' %}">Contact Us</a></li>
+    <li class="nav-item"><a class="nav-link" href="{% url 'home' %}#quote ">Request a Free Quote</a></li>
+{% endblock %}
+
+{% block nav-desktop %}
+    <li class="nav-item"><a class="nav-link" href="{% url 'home' %}#about ">About Us</a></li>
+    <li class="nav-item"><a class="nav-link" href="{% url 'home' %}#services ">Services</a></li>
+
+    <li class="nav-item"><a class="nav-link" href="{% url 'contact' %}">Contact Us</a></li>
+    <li class="nav-item"><a class="nav-link" href="{% url 'home' %}#quote ">Request a Free Quote</a></li>
+{% endblock %}
 
 {% block content %}
 
@@ -26,7 +41,7 @@
             <h1><span> CONTACT</span></h1>
             <p class="title-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla porta, dui at suscipit
                 aliquam, massa ex accumsan augue, in vehicula nulla justo id lacus. </p>
-            <a href="#" class="send-btn">GET FREE QUOTE <i class="fas fa-angle-double-right"></i></a>
+            <a href="{% url 'home' %}#quote" class="send-btn">GET FREE QUOTE <i class="fas fa-angle-double-right"></i></a>
         </div>
     </div>
 </div>
@@ -117,10 +132,6 @@
         </div>
     </div>
 
-
-    <div class="contact-map  animate " data-anim-type="fadeInRight" data-anim-delay="400">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96772.0600963339!2d-74.13877087497531!3d40.715223334282655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c250d225bfafdd%3A0x249f013a2cd25d9!2sJersey+City%2C+NJ%2C+USA!5e0!3m2!1sen!2sin!4v1545806593722"></iframe>
-    </div>
 </div>
 <!--contact-section-->
 {% endblock %}
