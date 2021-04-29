@@ -52,11 +52,13 @@
             <div class="crbnMenu">
                 <ul class="menu">
                     <li class="nav-item"><a class="nav-link" href="{% url 'home' %}">Home</a></li>
+                    {% block nav-mobile %}
                     <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
                     <li class="nav-item"><a class="nav-link" href="about.html">Services</a></li>
 
                     <li class="nav-item"><a class="nav-link" href="{% url 'contact' %}">Contact Us</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">Request a Free Quote</a></li>
+                    {% endblock %}
                 </ul>
             </div>
         </div>
@@ -75,11 +77,13 @@
             <div class="col-md-9 collapse navbar-collapse">
                 <ul class="navbar-nav">
                    <li class="nav-item"><a class="nav-link" href="{% url 'home' %}">Home</a></li>
+                    {% block nav-desktop %}
                     <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
                     <li class="nav-item"><a class="nav-link" href="about.html">Services</a></li>
 
                     <li class="nav-item"><a class="nav-link" href="{% url 'contact' %}">Contact Us</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">Request a Free Quote</a></li>
+                    {% endblock %}
                 </ul>
             </div>
         </nav>
